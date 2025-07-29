@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample HTML5 page demonstrating semantic structure, accessibility, and SEO best practices for PLP Web Technologies classroom.">
+    <meta name="keywords" content="HTML5, semantic web, accessibility, SEO, web development">
+    <meta name="author" content="PLP Web Technologies Student">
+    <title>HTML5 Semantic Web Page | PLP Web Technologies</title>
+    
+    <!-- Accessibility: Skip to content link (hidden until focused) -->
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Page Header -->
+    <header role="banner">
+        <h1>PLP Web Technologies Classroom</h1>
+        <p>July 2025 - Introduction to HTML5</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation">
+        <h2>Site Navigation</h2>
+        <ul>
+            <li><a href="#html5">HTML5 Basics</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#seo">SEO Principles</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <article id="html5">
+            <header>
+                <h2>HTML5 Semantic Structure</h2>
+                <p>Published on <time datetime="2025-07-29">July 29, 2025</time></p>
+            </header>
+            
+            <section>
+                <h3>Why Semantic HTML Matters</h3>
+                <p>Semantic HTML5 elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> provide meaning to web content, making it more accessible and SEO-friendly.</p>
+                
+                <figure>
+                    <img src="html5-structure.png" alt="Diagram showing HTML5 semantic page structure" width="600" height="300">
+                    <figcaption>HTML5 Semantic Page Structure</figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h3>Key Semantic Elements</h3>
+                <ul>
+                    <li><strong>&lt;article&gt;</strong>: Independent, self-contained content</li>
+                    <li><strong>&lt;section&gt;</strong>: Thematic grouping of content</li>
+                    <li><strong>&lt;aside&gt;</strong>: Content indirectly related to main content</li>
+                    <li><strong>&lt;figure&gt;</strong>: Self-contained content like images or diagrams</li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="accessibility">
+            <h2>Web Accessibility</h2>
+            <p>Accessibility ensures that all users, including those with disabilities, can access web content.</p>
+            
+            <section>
+                <h3>Accessibility Best Practices</h3>
+                <ol>
+                    <li>Use proper heading hierarchy (h1-h6)</li>
+                    <li>Provide alt text for images</li>
+                    <li>Ensure sufficient color contrast</li>
+                    <li>Make interactive elements keyboard-navigable</li>
+                    <li>Use ARIA landmarks when appropriate</li>
+                </ol>
+            </section>
+        </article>
+
+        <article id="seo">
+            <h2>Search Engine Optimization</h2>
+            <p>SEO helps search engines understand and rank your content appropriately.</p>
+            
+            <section>
+                <h3>Basic On-Page SEO Techniques</h3>
+                <ul>
+                    <li>Use descriptive, keyword-rich page titles</li>
+                    <li>Include meta descriptions</li>
+                    <li>Structure content with proper heading hierarchy</li>
+                    <li>Use semantic HTML5 elements</li>
+                    <li>Optimize images with alt text</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <!-- Sidebar Content -->
+    <aside role="complementary" aria-label="Additional resources">
+        <h2>Resources</h2>
+        <section id="resources">
+            <h3>Recommended Reading</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Documentation</a></li>
+                <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG Accessibility Guidelines</a></li>
+                <li><a href="https://developers.google.com/search/docs">Google Search Documentation</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>Upcoming Topics</h3>
+            <ul>
+                <li>Introduction to CSS</li>
+                <li>Responsive Web Design</li>
+                <li>JavaScript Fundamentals</li>
+            </ul>
+        </section>
+    </aside>
+
+    <!-- Page Footer -->
+    <footer role="contentinfo">
+        <h2>About This Page</h2>
+        <p>This page was created as part of the PLP Web Technologies classroom assignment on HTML5 semantics, accessibility, and SEO.</p>
+        <p>Last updated: <time datetime="2025-07-29">July 29, 2025</time></p>
+        <p><small>&copy; 2025 PLP Web Technologies. All rights reserved.</small></p>
+    </footer>
+</body>
+</html>
